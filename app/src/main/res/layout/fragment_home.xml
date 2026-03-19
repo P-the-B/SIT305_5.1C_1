@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Search -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search sports"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:padding="10dp" />
+
+        <!-- Bookmark button -->
+        <ImageButton
+            android:id="@+id/bookmarksButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star_big_on"
+            android:contentDescription="Bookmarks" />
+    </LinearLayout>
+
+    <!-- Featured title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Featured Matches"
+        android:textStyle="bold"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp" />
+
+    <!-- Featured list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/featuredRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="12dp"
+        android:clipToPadding="false" />
+
+    <!-- News title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latest News"
+        android:textStyle="bold"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp" />
+
+    <!-- News list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+</LinearLayout>
