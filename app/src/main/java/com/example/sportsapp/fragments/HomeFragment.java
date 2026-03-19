@@ -145,8 +145,12 @@ public class HomeFragment extends Fragment {
     // news API load
     private void fetchNews() {
 
+        String apiKey = new String(
+                android.util.Base64.decode(BuildConfig.NEWS_API_KEY, android.util.Base64.DEFAULT)
+        ).trim();
+
         RetrofitClient.getApiService()
-                .getSportsNews("sports", "us", BuildConfig.NEWS_API_KEY)
+                .getSportsNews("sports", "us", apiKey)
                 .enqueue(new Callback<NewsResponse>() {
                     @Override
                     public void onResponse(@NonNull Call<NewsResponse> call,
