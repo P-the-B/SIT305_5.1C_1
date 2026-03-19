@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- match image -->
+    <ImageView
+        android:id="@+id/matchImage"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/s1" />
+
+    <!-- match title -->
+    <TextView
+        android:id="@+id/matchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Match Title"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp" />
+
+    <!-- sport type -->
+    <TextView
+        android:id="@+id/matchSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        android:textSize="12sp" />
+
+</LinearLayout>
