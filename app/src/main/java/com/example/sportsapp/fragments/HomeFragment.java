@@ -27,6 +27,11 @@ import com.example.sportsapp.models.News;
 import com.example.sportsapp.models.NewsResponse;
 import com.example.sportsapp.BuildConfig;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +72,10 @@ public class HomeFragment extends Fragment {
         newsRecycler = view.findViewById(R.id.newsRecyclerView);
         searchBar = view.findViewById(R.id.searchBar);
         bookmarksButton = view.findViewById(R.id.bookmarksButton);
+
+        TextView liveDateLabel = view.findViewById(R.id.liveDateLabel);
+        String today = new SimpleDateFormat("d MMM yyyy", Locale.getDefault()).format(new Date());
+        liveDateLabel.setText(today);
 
         // top bookmarks icon -> open bookmark screen
         bookmarksButton.setOnClickListener(v ->
