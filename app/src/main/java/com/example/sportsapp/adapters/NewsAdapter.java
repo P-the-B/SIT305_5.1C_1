@@ -24,9 +24,15 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         void onClick(News news);
     }
 
+    // fires after a bookmark is removed — lets the fragment update its subheading count
+    public interface OnBookmarkRemovedListener {
+        void onRemoved(int remainingCount);
+    }
+
     private final List<News> newsList;
     private final OnItemClickListener listener;
     private final boolean isBookmarkScreen;
+    private OnBookmarkRemovedListener onBookmarkRemovedListener;
 
     public NewsAdapter(List<News> newsList,
                        OnItemClickListener listener,
@@ -34,6 +40,11 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         this.newsList = newsList;
         this.listener = listener;
         this.isBookmarkScreen = isBookmarkScreen;
+    }
+
+    // optional — only set by BookmarkFragment so it can update its subheading
+    public void setOnBookmarkRemovedListener(OnBookmarkRemovedListener listener) {
+        this.onBookmarkRemovedListener = listener;
     }
 
     @NonNull
@@ -66,12 +77,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
         if (isBookmarkScreen) {
 
-            // on the bookmark screen the star is always filled — tap to remove
             holder.bookmarkBtn.setImageResource(android.R.drawable.btn_star_big_on);
 
             holder.bookmarkBtn.setOnClickListener(v -> {
-                // use getAdapterPosition() so the index is always current,
-                // even if earlier items have already been removed
                 int currentPos = holder.getAdapterPosition();
                 if (currentPos == RecyclerView.NO_ID) return;
 
@@ -79,11 +87,15 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
                 newsList.remove(currentPos);
                 notifyItemRemoved(currentPos);
                 notifyItemRangeChanged(currentPos, newsList.size());
+
+                // notify the fragment so it can update the subheading count immediately
+                if (onBookmarkRemovedListener != null) {
+                    onBookmarkRemovedListener.onRemoved(newsList.size());
+                }
             });
 
         } else {
 
-            // on the home / related screen, show current saved state and allow toggling
             boolean isSaved = BookmarkManager.isBookmarked(news, holder.itemView.getContext());
 
             holder.bookmarkBtn.setImageResource(
