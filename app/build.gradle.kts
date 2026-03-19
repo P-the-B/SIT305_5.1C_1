@@ -29,7 +29,7 @@ android {
         buildConfigField(
             "String",
             "NEWS_API_KEY",
-            "\"${localProps.getProperty("NEWS_API_KEY", "")}\""
+            "\"ZWJiZjY4YTg3YmNlNDNmNGIxNWU5MTYyYmM2NTkyYjg=\""
         )
     }
 
