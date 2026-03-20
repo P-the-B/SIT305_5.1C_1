@@ -1,4 +1,6 @@
-package com.example.sportsapp.models;
+package com.example.sportsapp.api;
+
+import com.example.sportsapp.models.News;
 
 import java.util.List;
 

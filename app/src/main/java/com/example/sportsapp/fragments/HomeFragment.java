@@ -24,7 +24,7 @@ import com.example.sportsapp.adapters.NewsAdapter;
 import com.example.sportsapp.api.RetrofitClient;
 import com.example.sportsapp.models.Match;
 import com.example.sportsapp.models.News;
-import com.example.sportsapp.models.NewsResponse;
+import com.example.sportsapp.api.NewsResponse;
 import com.example.sportsapp.BuildConfig;
 
 import java.text.SimpleDateFormat;

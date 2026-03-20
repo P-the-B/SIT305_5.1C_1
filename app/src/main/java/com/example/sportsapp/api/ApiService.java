@@ -1,7 +1,5 @@
 package com.example.sportsapp.api;
 
-import com.example.sportsapp.models.NewsResponse;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

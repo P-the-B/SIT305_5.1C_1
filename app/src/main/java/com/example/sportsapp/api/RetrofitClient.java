@@ -22,7 +22,7 @@ public class RetrofitClient {
         return retrofit;
     }
 
-    // 🔴 THIS IS WHAT YOUR HomeFragment EXPECTS
+    // HomeFragment EXPECTS this method
     public static ApiService getApiService() {
         return getClient().create(ApiService.class);
     }
