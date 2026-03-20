@@ -91,9 +91,8 @@ app/src/main/java/com/example/sportsapp/
 ## Setup
 
 ### 1. Clone the repository
-```bash
-Use the button above to get the url!!
-```
+Use the <img width="55" height="30" alt="image" src="https://github.com/user-attachments/assets/a4801853-b2e5-4fcb-8640-d1eb366af84f" />
+ button above to get the URL!
 
 ### 2. Build and run
 Open the project in Android Studio, let Gradle sync, then run on a device or emulator (API 26+). No API key configuration required — the NewsAPI key is Base64-encoded and bundled into the build via `BuildConfig`.
