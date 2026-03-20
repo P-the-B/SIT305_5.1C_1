@@ -112,3 +112,7 @@ Open the project in Android Studio, let Gradle sync, then run on a device or emu
 
 This project was built with assistance from OpenAI - ChatGPT as declared in the submission documentation. ChatGPT acted as the technical implementer under student direction. All architectural changes, scope definitions, and design choices were made by the student. 
 AI, it's a love-hate relationship :heart: / :broken_heart:
+
+## Legal
+
+This project was created for educational purposes as part of Deakin University's SIT305 unit. All rights reserved. Reuse, redistribution, or reproduction of any part of this codebase requires explicit written permission from the author.
