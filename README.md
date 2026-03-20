@@ -1,5 +1,5 @@
 # Sports News Feed App
-### SIT305 — Task 5.1C | Deakin University
+### SIT305 — Task 5.1C - Subtask 1 - Deakin University
 
 A single-activity Android application that displays live sports news fetched from the NewsAPI, with featured match cards, category filtering, article detail views, and a local bookmark system.
 
@@ -9,10 +9,10 @@ A single-activity Android application that displays live sports news fetched fro
 
 **Home Screen**
 - Horizontal RecyclerView showing featured match cards (Football, Basketball, Cricket)
-- Vertical grid RecyclerView displaying live sports news articles fetched from NewsAPI
+- Vertical grid RecyclerView displaying live sports news articles fetched from NewsAPI (Not required by task but did it anyway!)
 - Live search/filter bar — filters articles by title as you type
 - Bookmark icon in the toolbar navigates to your saved stories
-- Live date label showing today's date
+- Live date label showing today's date for API feed.
 
 **Detail Screen**
 - Full article image loaded via Glide
@@ -39,8 +39,8 @@ A single-activity Android application that displays live sports news fetched fro
 
 | | | |
 |---|---|---|
-| ![Screen 1](url) | ![Screen 2](url) | ![Screen 3](url) |
-| ![Screen 4](url) | ![Screen 5](url) | ![Screen 6](url) |
+| <img width="546" height="1204" alt="image" src="https://github.com/user-attachments/assets/037b5f9b-78ca-4a41-9dc6-c359eef99123" /> | <img width="544" height="1193" alt="image" src="https://github.com/user-attachments/assets/828b981b-e2d1-4b9d-9dd5-92954a895fa5" /> | <img width="552" height="1202" alt="image" src="https://github.com/user-attachments/assets/b4fdd5c0-9f40-439d-ac2a-8eeb407d877c" /> |
+| <img width="551" height="1206" alt="image" src="https://github.com/user-attachments/assets/1b869189-33d8-4ffa-8c5e-712380b5f702" /> | <img width="542" height="1202" alt="image" src="https://github.com/user-attachments/assets/b1a2ec0e-8a86-42cb-b833-5ba72f47217e" /> | <img width="552" height="1211" alt="image" src="https://github.com/user-attachments/assets/e2b003d3-87c7-462f-a163-06d21413af61" /> |
 
 ---
 
@@ -110,4 +110,9 @@ Open the project in Android Studio, let Gradle sync, then run on a device or emu
 
 ## AI Assistance Declaration
 
-This project was built with assistance from Claude (Anthropic) as declared in the submission documentation. Claude acted as the technical implementer under student direction. All architectural decisions, scope definitions, and design choices were made by the student. The AI conversation link is included in the submission PDF.
+This project was built with assistance from OpenAI - ChatGPT as declared in the submission documentation. ChatGPT acted as the technical implementer under student direction. All architectural changes, scope definitions, and design choices were made by the student. 
+AI, it's a love-hate relationship :heart: / :broken_heart:
+
+## Legal
+
+This project was created for educational purposes as part of Deakin University's SIT305 unit. All rights reserved. Reuse, redistribution, or reproduction of any part of this codebase requires explicit written permission from the author.

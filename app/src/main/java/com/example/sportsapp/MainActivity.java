@@ -6,11 +6,7 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-
-import com.example.sportsapp.fragments.BookmarkFragment;
-import com.example.sportsapp.fragments.DetailFragment;
 import com.example.sportsapp.fragments.HomeFragment;
-import com.example.sportsapp.models.News;
 
 // main controller for fragments + toolbar nav
 public class MainActivity extends AppCompatActivity {
