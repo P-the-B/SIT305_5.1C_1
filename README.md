@@ -39,10 +39,11 @@ A single-activity Android application that displays live sports news fetched fro
 
 | | | |
 |---|---|---|
-| <img width="546" height="1204" alt="image" src="https://github.com/user-attachments/assets/037b5f9b-78ca-4a41-9dc6-c359eef99123" /> | <img width="544" height="1193" alt="image" src="https://github.com/user-attachments/assets/828b981b-e2d1-4b9d-9dd5-92954a895fa5" /> | <img width="552" height="1202" alt="image" src="https://github.com/user-attachments/assets/b4fdd5c0-9f40-439d-ac2a-8eeb407d877c" /> |
-| <img width="551" height="1206" alt="image" src="https://github.com/user-attachments/assets/1b869189-33d8-4ffa-8c5e-712380b5f702" /> | <img width="542" height="1202" alt="image" src="https://github.com/user-attachments/assets/b1a2ec0e-8a86-42cb-b833-5ba72f47217e" /> | <img width="552" height="1211" alt="image" src="https://github.com/user-attachments/assets/e2b003d3-87c7-462f-a163-06d21413af61" /> |
+| <img src="screenshots/01_home.png" width="250" height="600"> | <img src="screenshots/02_featured.png" width="250" height="600"> | <img src="screenshots/03_detail.png" width="250" height="600"> |
+| **Home** | **Featured** | **Detail** |
+| <img src="screenshots/04_search.png" width="250" height="600"> | <img src="screenshots/05_bookmark.png" width="250" height="600"> | <img src="screenshots/06_Full_Story_in_Browser.png" width="250" height="600"> |
+| **Search** | **Bookmark** | **Full Story In Browser** |
 
----
 
 ## Tech Stack
 
